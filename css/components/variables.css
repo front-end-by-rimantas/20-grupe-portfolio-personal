@@ -1,2 +1,34 @@
+/* FONTS */
+@font-face {
+    font-famly: ;
+    src: url(../../fonts/????);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-famly: ;
+    src: url(../../fonts/????);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-famly: ;
+    src: url(../../fonts/????);
+    font-weight: normal;
+    font-style: italic;
+}
+    
+/* VARIABLES */
 :root {
+    /* COLORS */
+    --main-color: ;
+    /* gal --main-color-light ; footery'je prie newsletter lyg ir yra kitokio dar atspalvio mėlyna */
+    --footer-color: ; 
+    /* + dar lyg ir yra dvi kitokios spalvos prie plans */
+
+    /* PADDING */
+
+    /* MARGIN */
 }
