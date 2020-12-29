@@ -1,3 +1,7 @@
-header {
-    
+.menu-button {
+    display: grid;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
 }
