@@ -1,9 +1,25 @@
 // ALL IMPORT
-// header
-// hero
-// services
+/* Header */
+/* This is me */
+/* About me */
+/* Services */
+/* Results */
+/* Projects */
+/* Feedback */
+/* Plans */
+/* Blog */
+/* Logos */
+/* Footer */
 
 // CODE EXECUTION
-// header
-// hero
-// services
+/* Header */
+/* This is me */
+/* About me */
+/* Services */
+/* Results */
+/* Projects */
+/* Feedback */
+/* Plans */
+/* Blog */
+/* Logos */
+/* Footer */
