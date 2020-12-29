@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at https://front-end-by-rimantas.github.io/20-grupe-portfolio/
 
-Design: Philip Gilbert - Personal
+Design: [Personal](https://preview.colorlib.com/theme/personal/index.html)
 
 ## Project features
 
