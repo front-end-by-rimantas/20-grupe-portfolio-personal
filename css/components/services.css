@@ -10,7 +10,9 @@
 }
 
 .services-parag {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
     padding: .5rem 0 4rem 0;
     color: blueviolet;
     
