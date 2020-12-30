@@ -57,7 +57,7 @@ nav > .dropdown::after {
     .menu-button {
         width: 24px;
         height: 2px;
-        background-color: black;
+        background-color: #2b2d2f;
         margin: 5px 0;
     }
 }
