@@ -19,14 +19,18 @@ nav > a {
     text-transform: uppercase;
     font-size: 13px;
 }
+nav > .active {
+    color: var(--main-color);
+}
 nav > a:hover {
-    color: #8193ff;
-    transition: ease 0.5s;
+    color: var(--main-color);
+    transition: ease 0.3s;
 }
 nav > a + a {
     margin-left: 25px;
 }
 nav > .dropdown {
+    display: inline-block;
     position: relative;
     margin-right: 15px;
 }
