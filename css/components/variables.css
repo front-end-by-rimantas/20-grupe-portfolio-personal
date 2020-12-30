@@ -31,13 +31,15 @@
     
 /* VARIABLES */
 :root {
-    /* COLORS */
-    --main-color: ;
-    /* gal --main-color-light ; footery'je prie newsletter lyg ir yra kitokio dar atspalvio mėlyna */
-    --footer-color: ; 
-    /* + dar lyg ir yra dvi kitokios spalvos prie plans */
-
-    /* PADDING */
-
-    /* MARGIN */
+    --main-color: #8193ff; 
+    --main-color-light: #64bafc;
+    --footer-color: #04091e;
+    
+    /* plans colours: */
+    --plans-background-color: #f9f9ff;
+    --plans-numbers-outside-color: #e2e5ff;
+    --plans-numbers-inside-color: #eceeff;
+    --plans-numbers-hover-outside-color: #9ebdfd;
+    --plans-numbers-hover-inside-color: #81affd;
+    /* plans hover background color are --main-color and --main-color-light */
 }
