@@ -2,6 +2,7 @@
 @import './components/variables.css';
 @import './components/reset.css';
 /* 3rd party */
+@import './components/bootstrap-grid.css';
 @import './components/bootstrap-grid.min.css';
 /* components */
 @import './components/about.css';

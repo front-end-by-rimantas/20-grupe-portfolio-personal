@@ -1,3 +1,166 @@
 /* This is me */
+.about-this{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F9F9FF;
+    font-family: poppins,sans-serif;
+}
+.this-is-me-left{
+    margin-top:145px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.this-is-me-left > p:first-of-type {
+    text-transform: uppercase;
+}
+.this-is-me-left > p:last-of-type {
+    display: flex;
+    font-size: 14px;
+    color: #838584;
+    margin-bottom: 16px;
+    float: left;
+}
+.this-is-me-right > img{
+    max-width: 100%;
+    height: auto;
+}
+
+.this-is-me p{
+    display: inline-block;
+    float: left;
+    text-transform: uppercase;
+    
+}
+.this-is-me-left h1{
+    display: inline-block;
+    float: left;
+    font-size: 50px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
 
 /* About me */
+
+.about-me {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: poppins,sans-serif;
+    width: 100%;
+}
+.about-me-right {
+
+    display: inline-block;
+    height:300px;
+    width: 40%;
+  
+}
+.about-me-right > h1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+.about-me-left{
+}
+.about-img{
+    width: 100%;
+}
+.about-me-right > p:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.about-me-right > p:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    font-size: 14px;
+    color: #838584;
+    margin-bottom: 16px;
+ 
+}
+.about-me p{
+    display: inline-block;
+}
+.about-me-left h1{
+    display: inline-block;
+    float: left;
+    font-size: 50px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+@media (max-width:320px){
+    .this-is-me-left{
+        width: 100%;
+        height: auto;
+    }
+    .this-is-me-right {
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media (max-width:576px){
+    .this-is-me-left{
+        width: 100%;
+        height: auto;
+    }
+    .this-is-me-right {
+        width: 100%;
+        height: auto;
+    }
+    .about-me-left {
+        max-width: 100%;
+        height: auto;
+ }
+    
+}
+@media (max-width:768px){
+    .this-is-me-left {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .this-is-me-right {
+        width: 80%;
+        margin-left:10% ;
+        margin-right: 10%;
+    }
+    .about-me-left {
+        max-width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+ }
+ .about-me-right {
+    max-width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}
+@media (max-width:992px){
+    .this-is-me-right {
+       width:50%;
+    }
+    .this-is-me-left{
+        width: 50%;
+    }
+    .about-me-left {
+        width: 50%;
+    }
+    .about-me-right{
+    width: 50%;
+    }
+}
