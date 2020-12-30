@@ -1,7 +1,47 @@
-.menu-button {
-    display: grid;
+header > .row > .col-xs-12 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+}
+header > nav {
+    display: inline-block;
+}
+header > .active {
+    border: none;
+    color: #8193ff;
+}
+nav > a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+nav > a:hover {
+    color: #8193ff;
+    transition: ease 0.5s;
+}
+nav > a + a {
+    margin-left: 25px;
+}
+nav > .dropdown {
+    position: relative;
+    margin-right: 15px;
+}
+nav > .dropdown::after {
+    content: '\02C5';
+    position: absolute;
+    top: 15%;
+    right: -15px;
+}
+
+/* STYLE FOR MENU BUTTON THAT APPEARS WHEN REDUCING WINDOW SIZE */
+/* .menu-button {
     width: 24px;
     height: 2px;
     background-color: black;
     margin: 5px 0;
-}
+    pointer: cursor;
+} */
