@@ -1,1 +1,26 @@
 /* Services style */
+
+/* .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-wrapper > h1 {
+    text-align: center;
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-items > div {
+    width: 100%;
+    background-color: blue;
+} */
+
+.service-item {
+    place-items: center;
+}
