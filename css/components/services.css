@@ -23,8 +23,8 @@
     padding: .5rem 0 4rem 0;
     color: blueviolet;
     /* background-color: chartreuse; */
-    min-width: 320px;
-    max-width: 500px;
+    /* min-width: 320px;
+    max-width: 500px; */
     
 }
 
@@ -38,8 +38,8 @@
     /* align-items: stretch; */
     margin: 2rem;
     max-width: 350px;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     
 }
 
