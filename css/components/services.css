@@ -69,19 +69,19 @@
     font-weight: 300;
 }
 
-.service-item:hover h1:not(:hover){
+.service-item:hover > h1:not(:hover){
     background: -webkit-linear-gradient(#8491FF, #63BCFC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.service-item:hover i:not(:hover){
+.service-item:hover > i:not(:hover){
     background: -webkit-linear-gradient(#8491FF, #63BCFC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-h1:hover, i:hover {
+.service-item > h1:hover, .service-item > i:hover {
     background: -webkit-linear-gradient(#8491FF, #63BCFC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
