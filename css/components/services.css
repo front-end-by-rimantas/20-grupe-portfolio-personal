@@ -1,23 +1,14 @@
-
-
 .services-h1 {
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
 
-/* .servics-p-row {
-    display: grid;
-    place-items: center;
-} */
-
 .services-parag {
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
-    /* width: 300px; */
     max-width: 500px;
-    /* background-color: green; */
     margin: 0 auto;
     padding: 1rem;
 }
@@ -28,13 +19,11 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    /* background-color: aquamarine; */
 }
 
 .service-item {
     min-width: 150px;
     max-width: 300px;
-    /* border: 5px solid green; */
     text-align: center;
     padding: 1rem;
 }
@@ -50,15 +39,3 @@
     line-height: 1.5rem;
     font-size: .8rem;
 }
-
-/* @media only screen and (min-width : 768px) {
-    .service-item {
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width : 960px) {
-    .service-item {
-        width: 33.33%;
-    }
-} */
