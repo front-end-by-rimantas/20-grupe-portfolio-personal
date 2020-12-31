@@ -1,1 +1,49 @@
 /* Featured projects gallery */
+ul {
+    list-style: none;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+    line-height: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 18px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+ul li.active {
+    color: #8490ff;
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    height: 744.25px;
+}
+
+.design-img {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.design-name {
+    text-align: center;
+    margin-block-start: 1.33em;
+}
+
+.design-type {
+    text-align: center;
+    margin-block-end: 1.33em;
+}
+
+
+
