@@ -21,7 +21,7 @@ nav > a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: 550;
 }
 nav > .active {
     color: var(--main-color);
@@ -36,14 +36,11 @@ nav > a + a {
 nav > .dropdown {
     display: inline-block;
     position: relative;
-    margin-right: 15px;
+    margin-right: 5px;
 }
-nav > .dropdown::after {
-    content: '\02C5';
-    position: absolute;
-    right: -15px;
-    down: -5px;
-    font-weight: normal;
+.dropdown i {
+    vertical-align: middle;
+    margin-left: 3px;
 }
 @media (max-width: 992px){
     nav {
