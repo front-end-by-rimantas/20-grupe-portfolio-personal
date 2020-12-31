@@ -100,31 +100,26 @@
     text-transform: uppercase;
 }
 
-@media (max-width:320px){
-    .this-is-me-left{
-        width: 100%;
-        height: auto;
-    }
-    .this-is-me-right {
-        width: 100%;
-        height: auto;
-    }
 
-}
-@media (max-width:576px){
-    .this-is-me-left{
-        width: 100%;
-        height: auto;
-    }
+
+
+@media (max-width:992px){
     .this-is-me-right {
-        width: 100%;
+       width:50%;
+       height: auto;
+    }
+    .this-is-me-left{
+        width: 50%;
         height: auto;
     }
     .about-me-left {
-        max-width: 100%;
+        width: 50%;
         height: auto;
- }
-    
+    }
+    .about-me-right{
+    width: 50%;
+    height: auto;
+    }
 }
 @media (max-width:768px){
     .this-is-me-left {
@@ -138,29 +133,41 @@
         margin-right: 10%;
     }
     .about-me-left {
-        max-width: 80%;
+        width: 80%;
         height: auto;
         margin-left: 10%;
         margin-right: 10%;
  }
  .about-me-right {
-    max-width: 80%;
+    width: 80%;
     height: auto;
     margin-left: 10%;
     margin-right: 10%;
 }
 }
-@media (max-width:992px){
-    .this-is-me-right {
-       width:50%;
-    }
+@media (max-width:576px){
     .this-is-me-left{
-        width: 50%;
+        width: 100%;
+      
     }
     .about-me-left {
-        width: 50%;
-    }
+        width: 100%;
+        margin: 0%;  
+ }
     .about-me-right{
-    width: 50%;
+        width: 100%;
+        margin: 10px;
     }
+    
+}
+@media (max-width:320px){
+    .this-is-me-left{
+        width: 100%;
+        
+    }
+    .this-is-me-right {
+        width: 100%;
+      
+    }
+
 }
