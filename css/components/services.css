@@ -1,4 +1,4 @@
-.services-h1 {
+.services-h3 {
     text-align: center;
     font-size: 2.1rem;
     line-height: 2.9rem;
@@ -41,7 +41,7 @@
     color: #222;
 }
 
-.service-item > h1 {
+.service-item > h3 {
     font-size: 1.15rem;
     font-weight: 600;
     padding-bottom: 1rem;
@@ -55,7 +55,7 @@
     padding: 0 1rem;
 }
 
-.service-item:hover > h1:not(:hover){
+.service-item:hover > h3:not(:hover){
     background: -webkit-linear-gradient(#8491FF, #63BCFC);
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,7 +70,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.service-item > h1:hover, .service-item > i:hover {
+.service-item > h3:hover, .service-item > i:hover {
     background: -webkit-linear-gradient(#8491FF, #63BCFC);
     background-clip: text;
     -webkit-background-clip: text;
