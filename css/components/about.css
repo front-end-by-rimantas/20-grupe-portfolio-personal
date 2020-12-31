@@ -5,6 +5,7 @@
     justify-content: space-between;
     background-color: #F9F9FF;
     font-family: poppins,sans-serif;
+    font-weight: 200;
 }
 .this-is-me-left{
     margin-top:145px;
@@ -52,6 +53,8 @@
     justify-content: space-between;
     font-family: poppins,sans-serif;
     width: 100%;
+    font-weight: 200;
+    margin-bottom: 50px;
 }
 .about-me-right {
 
