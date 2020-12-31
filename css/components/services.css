@@ -11,7 +11,7 @@
     line-height: 1.4rem;
     max-width: 500px;
     margin: 0 auto;
-    padding: .8rem .5rem 2rem .5rem;
+    padding: .8rem .4rem;
     font-weight: 300;
     color: var(--grey-color);
 }
@@ -29,14 +29,10 @@
     min-width: 150px;
     max-width: 300px;
     text-align: center;
-    padding: .5rem;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 2.5rem;
 }
-
-/* .service-item:hover p:not(:hover){
-    background: -webkit-linear-gradient(#8491FF, #63BCFC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 .service-item > i {
     font-size: 2.2rem;
@@ -44,23 +40,11 @@
     color: #222;
 }
 
-/* .service-item > i:hover {
-    background: -webkit-linear-gradient(#8491FF, #63BCFC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .service-item > h1 {
     font-size: 1.15rem;
     font-weight: 600;
     padding-bottom: 1rem;
 }
-
-/* .service-item > h1:hover {
-    background: -webkit-linear-gradient(#8491FF, #63BCFC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 .service-item > p {
     color: var(--grey-color);
