@@ -10,7 +10,7 @@
     opacity: 90%;
 }
 .btn-hero:hover {
-    box-shadow: 0px 0px  0px var(--main-color);
+    box-shadow: 0px 0px 0px var(--main-color);
     cursor: pointer;
     animation-name: blur;
     animation-duration: 1s;
