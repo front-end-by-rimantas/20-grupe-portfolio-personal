@@ -56,7 +56,6 @@ nav > a + a {
 }
 .dropdown-content {
     display: none;
-    transition: 0.3s ease;
     position: absolute;
     flex-direction: column;
     min-width: 160px;
@@ -67,15 +66,14 @@ nav > a + a {
     display: flex;
 }
 .dropdown-content a {
-    padding: 20px 30px 10px 0px;
+    padding: 20px 0 10px 0px;
 }
 .dropdown-content a + a {
-    padding: 10px 30px 20px 0px;
+    padding: 10px 0 20px 0px;
 }
 .dropdown-content i {
     vertical-align: middle;
-    margin-left: 50px;
-    margin-right: 0;
+    margin-left: 70px;
 }
 @media (max-width: 992px){
     nav {
@@ -91,5 +89,8 @@ nav > a + a {
         height: 2px;
         background-color: #2b2d2f;
         margin: 5px 0;
+    }
+    .logo {
+        margin-left: 20px;
     }
 }
