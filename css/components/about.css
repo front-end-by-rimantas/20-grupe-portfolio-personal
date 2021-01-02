@@ -2,10 +2,15 @@
 .about-this{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #F9F9FF;
-    font-family: poppins,sans-serif;
+    justify-content: center;
+    background-color: var(--plans-background-color);
     font-weight: 200;
+    width: 100%;
+}
+section{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .this-is-me-left{
     margin-top:145px;
@@ -13,55 +18,53 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 60%;
 }
+
 .this-is-me-left > p:first-of-type {
     text-transform: uppercase;
 }
 .this-is-me-left > p:last-of-type {
     display: flex;
     font-size: 14px;
-    color: #838584;
+    color: var(--grey-color);
     margin-bottom: 16px;
     float: left;
+}
+.this-is-me-right{
+    width: 40%;
 }
 .this-is-me-right > img{
     max-width: 100%;
     height: auto;
 }
-
 .this-is-me p{
     display: inline-block;
     float: left;
     text-transform: uppercase;
-    
 }
 .this-is-me-left h1{
     display: inline-block;
     float: left;
-    font-size: 50px;
+    font-size: 60px;
     margin: 20px 0px;
+    font-weight:600;
     text-transform: uppercase;
 }
-
-
 /* About me */
-
 .about-me {
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: poppins,sans-serif;
     width: 100%;
     font-weight: 200;
     margin-bottom: 50px;
 }
 .about-me-right {
-
     display: inline-block;
     height:300px;
     width: 40%;
-  
 }
 .about-me-right > h1 {
     display: flex;
@@ -69,9 +72,7 @@
     flex-direction: column;
     margin: 20px 0px;
     text-transform: uppercase;
-}
-
-.about-me-left{
+    font-weight:600;
 }
 .about-img{
     width: 100%;
@@ -88,23 +89,9 @@
     flex-direction: column;
     display: flex;
     font-size: 14px;
-    color: #838584;
+    color: var(--grey-color);
     margin-bottom: 16px;
- 
 }
-.about-me p{
-    display: inline-block;
-}
-.about-me-left h1{
-    display: inline-block;
-    float: left;
-    font-size: 50px;
-    margin: 20px 0px;
-    text-transform: uppercase;
-}
-
-
-
 
 @media (max-width:992px){
     .this-is-me-right {
@@ -114,6 +101,9 @@
     .this-is-me-left{
         width: 50%;
         height: auto;
+    }
+    .this-is-me-left h1{
+        font-size: 45px;
     }
     .about-me-left {
         width: 50%;
@@ -126,36 +116,43 @@
 }
 @media (max-width:768px){
     .this-is-me-left {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        vertical-align: middle;
+        width: 100%;
+        margin-top: 20px;
     }
     .this-is-me-right {
-        width: 80%;
-        margin-left:10% ;
-        margin-right: 10%;
+        vertical-align: middle;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .this-is-me-left h1{
+        font-size: 30px;
     }
     .about-me-left {
         width: 80%;
-        height: auto;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: auto;
+        margin-right: auto;;
  }
  .about-me-right {
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 }
 @media (max-width:576px){
     .this-is-me-left{
         width: 100%;
-      
+        margin-top: 20px;
+    }
+    .this-is-me-right{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .about-me-left {
         width: 100%;
-        margin: 0%;  
+        margin: 0%; 
  }
     .about-me-right{
         width: 100%;
@@ -166,11 +163,12 @@
 @media (max-width:320px){
     .this-is-me-left{
         width: 100%;
-        
+        margin-top: 20px;
     }
     .this-is-me-right {
-        width: 100%;
-      
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
     }
-
 }
