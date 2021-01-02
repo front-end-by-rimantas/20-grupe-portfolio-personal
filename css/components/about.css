@@ -9,17 +9,19 @@
 }
 section{
     margin-top: 50px;
-    width: 1200px;
+    width: 1100px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 10px;
 }
 .this-is-me-left{
-    margin-top:145px;
+    margin-top:120px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
+    margin-bottom: 30px;
 }
 
 .this-is-me-left > p:first-of-type {
@@ -33,7 +35,8 @@ section{
     float: left;
 }
 .this-is-me-right{
-    width: 40%;
+    max-width: 100%;
+    height: auto;
 }
 .this-is-me-right > img{
     max-width: 100%;
@@ -57,7 +60,7 @@ section{
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     font-weight: 200;
     margin-bottom: 50px;
@@ -159,7 +162,6 @@ section{
         width: 100%;
         margin: 10px;
     }
-    
 }
 @media (max-width:320px){
     .this-is-me-left{
