@@ -26,21 +26,56 @@ nav > a {
 nav > .active {
     color: var(--main-color);
 }
-nav > a:hover {
+nav > a:hover, .dropdown-content a:hover {
     color: var(--main-color);
     transition: ease 0.3s;
 }
 nav > a + a {
     margin-left: 25px;
 }
-nav > .dropdown {
+.dropdown {
     display: inline-block;
     position: relative;
     margin-right: 5px;
 }
-.dropdown i {
+.dropdown a {
+    display: inline-block;
+    color: #2b2d2f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 550;
+    margin-left: 25px;
+}
+.dropdown > a > i {
     vertical-align: middle;
     margin-left: 3px;
+}
+.dropdown-pages {
+    margin-right: 25px;
+}
+.dropdown-content {
+    display: none;
+    transition: 0.3s ease;
+    position: absolute;
+    flex-direction: column;
+    min-width: 160px;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropdown-content a {
+    padding: 20px 30px 10px 0px;
+}
+.dropdown-content a + a {
+    padding: 10px 30px 20px 0px;
+}
+.dropdown-content i {
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 0;
 }
 @media (max-width: 992px){
     nav {
