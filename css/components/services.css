@@ -1,17 +1,21 @@
 .services-h1 {
     text-align: center;
-    font-size: 2.3rem;
-    line-height: 3rem;
+    font-size: 2.1rem;
+    line-height: 2.9rem;
     font-weight: 600;
+    padding: 0.2rem .4rem;
+    margin: 0 auto;
 }
 
 .services-parag {
     text-align: center;
-    font-size: .8rem;
-    line-height: 1.5rem;
+    font-size: .9rem;
+    line-height: 1.4rem;
     max-width: 500px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 .4rem 1rem .4rem;
+    font-weight: 300;
+    color: var(--grey-color);
 }
 
 .service-items {
@@ -20,23 +24,56 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
 }
 
 .service-item {
     min-width: 150px;
     max-width: 300px;
     text-align: center;
-    padding: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 1.5rem;
 }
 
-.service-item > h1 {
-    font-size: 1.1rem;
-    font-weight: bold;
+.service-item > i {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    color: #222;
+}
+
+.service-item > h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
     padding-bottom: 1rem;
 }
 
 .service-item > p {
-    color: #777;
-    line-height: 2rem;
-    font-size: .8rem;
+    color: var(--grey-color);
+    font-size: .9em;
+    line-height: 1.4rem;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+
+.service-item:hover > h3:not(:hover){
+    background: -webkit-linear-gradient(#8491FF, #63BCFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-item:hover > i:not(:hover){
+    background: -webkit-linear-gradient(#8491FF, #63BCFC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-item > h3:hover, .service-item > i:hover {
+    background: -webkit-linear-gradient(#8491FF, #63BCFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
