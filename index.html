@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/home-page.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="img/png"/>
 
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
@@ -16,8 +17,52 @@
     <!-- Header -->
     <header class="container">
         <div class="row">
-            <div class="col-xs-12" style="background-color: yellow;">
-                HEADER CONTENT
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+                <nav>
+                    <a class="active" href="./index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Pricing</a>
+
+
+                    <div class="dropdown">
+                        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Blog Home</a>
+                            <a href="#">Blog Single</a>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown dropdown-pages">
+                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Elements</a>
+
+
+                            <div class="dropdown-level-2">
+                                <a href="#">Level 2 <i class="fa fa-angle-right"></i></a>
+                                <div class="dropdown-content-lvl-2">
+                                    <a href="#">Item One</a>
+                                    <a href="#">Item Two</a>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+
+
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="nav-btn">
+                    <div class="menu-button"></div>
+                    <div class="menu-button"></div>
+                    <div class="menu-button"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -25,19 +70,44 @@
     <main>
         
         <!-- This is me -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
-                    This is me CONTENT
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-this ">
+                    <section>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-left">
+                        <p>this is me</p>
+                        <h1>Philip gilbert</h1>
+                        <p>You will begin to realise why this exercise is called the Dickens
+                        Pattern with reference to the ghost showing Scrooge some different futures.</p>
+                        <div class="btn-hero">Discover now</div>
+                        </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-right">
+                        <img src="./img/hero-img.webp" alt="Hero img." class="hero-img"> 
+                    </div>
+                </section>
                 </div>
             </div>
         </div>
-
         <!-- About me -->
-        <div class="container" >
+        <div class="container-fluid" >
             <div class="row">
-                <div class="col-xs-12">
-                    About me CONTENT
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
+                        <section>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-left">
+                        <img src="./img/about-img.webp" alt="About img." class="about-img"> 
+                         </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-right">
+                        <p>About me</p>
+                        <h1>personal details</h1>
+                        <p>Here, I focus on a range of items and features that we use in 
+                            life without giving 
+                            them a second thought. such as Coca Cola. 
+                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco.</p>
+                        <div class="btn-hero">View full details</div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
