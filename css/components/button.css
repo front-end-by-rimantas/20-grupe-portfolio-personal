@@ -1,7 +1,34 @@
-.btn {
-    display: inline-block;
+.btn-hero {
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase ;
+    color: white;
+    font-size: 14px;
+    background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
+    opacity: 90%;
 }
+.btn-hero:hover {
+    box-shadow: 0px 0px 0px var(--main-color);
+    cursor: pointer;
+    animation-name: blur;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+}
+.about-me-right > .btn-hero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 190px;
+}
+@keyframes blur {
+    0%{
+    }
+    100%{
+        box-shadow: 0px 15px  30px var(--main-color);
 
-.btn:hover {
-    
+    }
 }
