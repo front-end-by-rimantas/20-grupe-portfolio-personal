@@ -6,6 +6,7 @@ footer {
     margin-top: auto;
     position: absolute;
     min-height: 309px;
+    
     color: var(--grey-color);
     margin-left:auto;
     margin-right:auto;
@@ -30,10 +31,6 @@ footer {
     margin-bottom: 20px;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
-
 footer p {
     display: inline-block;
     width: 100%;
@@ -43,19 +40,17 @@ footer p {
 }
 
 /* About me */
-h1 {
+footer h1 {
     font-size: 20px;
     color: white;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 footer span {
     color: var(--main-color)
 }
     
-
 /* Newsletter */
-
-
 
 footer input {
     display: inline-block;
@@ -71,3 +66,8 @@ footer button {
     width: 50px;
     height: 50px;}
 /* Follow me */
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
