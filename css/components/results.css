@@ -1,6 +1,9 @@
 /* Result numbers style */
-.results-wrapper {
+.results-background {
     background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
+}
+
+.results-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
