@@ -1,3 +1,125 @@
-header {
-    
+header > .row > .col-xs-12 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+}
+header > nav {
+    display: inline-block;
+}
+header > .active {
+    border: none;
+    color: #8193ff;
+}
+.nav-btn {
+    display: none;
+}
+nav > a {
+    display: inline-block;
+    color: #2b2d2f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 550;
+}
+nav > .active {
+    color: var(--main-color);
+}
+nav > a:hover, .dropdown a:hover, .dropdown-content a:hover {
+    color: var(--main-color);
+    transition: ease 0.3s;
+}
+nav > a + a {
+    margin-left: 25px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+.dropdown a {
+    display: inline-block;
+    color: #2b2d2f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 550;
+    margin-left: 25px;
+}
+.dropdown > a > i {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.dropdown-pages {
+    margin-right: 25px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    padding: 20px 0 10px 0px;
+    text-transform: capitalize;
+}
+.dropdown-content a + a {
+    padding: 10px 0 20px 0px;
+}
+.dropdown-level-2 {
+    position: relative;
+}
+.dropdown-level-2 a {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dropdown-level-2 i {
+    vertical-align: middle;
+    margin-left: 70px;
+}
+.dropdown-content-lvl-2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 100%;
+    min-width: 160px;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-level-2:hover .dropdown-content-lvl-2 {
+    display: block;
+}
+.dropdown-content-lvl-2 a {
+    padding: 20px 0 10px 0px;
+    text-transform: capitalize;
+} 
+.dropdown-content-lvl-2 a + a {
+    padding: 10px 0 20px 0px;
+}
+@media (max-width: 992px){
+    nav {
+        display: none;
+    }
+    .nav-btn { 
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .menu-button {
+        width: 24px;
+        height: 2px;
+        background-color: #2b2d2f;
+        margin: 5px 0;
+    }
+    .logo {
+        margin-left: 20px;
+    }
 }
