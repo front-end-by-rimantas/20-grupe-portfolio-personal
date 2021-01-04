@@ -57,6 +57,7 @@ nav > a + a {
 .dropdown-content {
     display: none;
     position: absolute;
+    background-color: white;
     right: 0;
     min-width: 160px;
     box-shadow: 0 3px 20px 0 rgba(0,0,0,0.2);
@@ -72,7 +73,7 @@ nav > a + a {
 .dropdown-content a + a {
     padding: 10px 0 20px 0px;
 }
-.dropdown-content-lvl-2 {
+.dropdown-level-2 {
     position: relative;
 }
 .dropdown-level-2 a {
@@ -86,7 +87,8 @@ nav > a + a {
 .dropdown-content-lvl-2 {
     display: none;
     position: absolute;
-    top: 50%;
+    background-color: white;
+    top: 0;
     right: 100%;
     min-width: 160px;
     box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.2);
