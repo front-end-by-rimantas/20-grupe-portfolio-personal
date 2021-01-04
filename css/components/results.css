@@ -1,1 +1,45 @@
 /* Result numbers style */
+.results-wrapper {
+    background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 4em 2em;
+}
+
+.number-item {
+    padding: 2rem;
+    width: 100%;
+}
+
+.number {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.number-title {
+    color: white;
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media only screen and (min-width : 768px) {
+    .results-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .number-item {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .results-wrapper {
+        flex-wrap: nowrap;
+    }
+}
