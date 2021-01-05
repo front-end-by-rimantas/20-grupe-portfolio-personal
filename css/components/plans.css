@@ -10,9 +10,10 @@
     display: flex;
     flex-wrap: wrap;
     background-color: red;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
 }
 .plans-item{
     background-color: #F9F9FF;
@@ -21,15 +22,26 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    z-index: 0;
+    height: 500px;
+
     
 }
 .plans-item:hover{
-    width: 30%;
+    width: 28%;
     height: auto;
     cursor: pointer;
     background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
     color:white;
+    z-index: 10;
+    position: absolute;
+}
+.plans-item:hover > .round-element > p {
+    color: var(--grey-color);
+}
+.plans-item:hover > .round-element {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 30px solid rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
 
 }
 .round-element{
@@ -43,6 +55,7 @@
     border: 30px solid #E2E5FF;
     background-color: #EDEFFF;
     font-size: 36px;
+    font-weight: bold;
     border-radius: 100px;
     margin-top: 40px;
 }
@@ -77,4 +90,32 @@
 .plans-price > p {
 font-size: 30px;
 font-weight: bold;
+}
+.plans-item:hover > .plans-price p {
+    display:none;
+}
+.plans-button{
+    display: none;
+    margin-top: 40px;
+    padding: 8px;
+    height: 40px;
+    width: 80%;
+    background-color: white;
+}
+.btn-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.plans-button > p {
+    display: inline-block;
+    
+}
+.plans-item:hover > .plans-button {
+    display: block;
 }
