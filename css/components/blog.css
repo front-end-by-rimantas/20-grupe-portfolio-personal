@@ -25,4 +25,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    border-bottom: 1px solid black;
+}
+.social-info-right > p, .social-info-right > p > i, .social-info-left > span {
+    vertical-align: middle;
+}
+.social-info-right > p > i {
+    margin-left: 5px;
 }
