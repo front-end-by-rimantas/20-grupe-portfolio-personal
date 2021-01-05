@@ -202,16 +202,16 @@ color: white;
 @media (max-width:960px){
     .plans-item{
         width: 50%;
-        animation-name: margin-top;
+       /* animation-name: margin-top;
         animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        
+        animation-fill-mode: forwards; */
     }
     .plans-item:hover{
         width: 50%;
-        animation-name: margin-top;
+        /* animation-name: margin-top;
         animation-duration: 0.5s;
-        animation-fill-mode: forwards;    }
+        animation-fill-mode: forwards; */
+        }
 }
 @keyframes margin-top{
     0%{
