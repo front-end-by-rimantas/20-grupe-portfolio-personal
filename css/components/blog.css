@@ -1,1 +1,27 @@
-/* One blog post style */
+.blog-section {
+    background-color: var(--plans-background-color);
+    align-content: center;
+}
+.blog-section > .container > .row > h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 550;
+    padding: 80px 0 20px 0;
+}
+.blog-section > .container > .row > p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--grey-color);
+    padding-bottom: 20px;
+}
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.blog-item > .social-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
