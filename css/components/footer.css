@@ -10,19 +10,16 @@ footer {
     margin-right:auto;
     display: flex; 
     align-items: center; 
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
- .footer-blue {
-    display: block;
-    align-items: center;
-    position: relative;
-    text-align: center;
-}
-
-.footer-collumn {
-    text-align: left;
-    line-height: 1.625em;
-    margin-bottom: 20px;
+ .footerRow {
+    display: grid;
+    box-sizing: border-box;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer p {
@@ -36,7 +33,7 @@ footer p {
 }
 
 /* About me */
-footer h1 {
+footer h4 {
     font-size: 18px;
     color: white;
     margin-top: 20px;
@@ -45,7 +42,12 @@ footer h1 {
 footer span {
     color: var(--main-color)
 }
-    
+.footer-collumn1 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: aboutMe;
+}
+
 /* Newsletter */
 
 footer input {
@@ -62,7 +64,25 @@ footer button {
     background-color: var(--main-color);
     width: 50px;
     height: 50px;
+    border: none;
+    line-height: 25px;
 }
+
+.footerButton {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.footer-collumn2 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: newsletter;
+}
+
+footer button:hover{
+    cursor: pointer;
+}
+    
 
 /* Follow me */
 
@@ -71,4 +91,66 @@ footer a {
     color: white;
     margin-right: 15px;
 }
+.footer-collumn3 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: followMe;
+}
 
+.socials a:hover {
+    color: var(--main-color);
+}
+
+/* Respinsive fix */
+
+ @media (max-width: 576px){
+    .footerRow {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "aboutMe"
+        "newsletter"
+        "followMe "
+    }
+}
+@media (min-width: 576px){
+    .footerRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+         "aboutMe newsletter"
+        "followMe ."
+    }
+}
+@media (min-width: 768px){
+    .footerRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+         "aboutMe newsletter"
+        "followMe ."  
+    }
+    .footer-collumn1{
+        width: 100%;
+        vertical-align:top
+    }
+    .footer-collumn2 {
+        vertical-align:top;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 992px){
+    .footerRow {
+        grid-template-columns: 0.4fr 0.4fr 0.2fr;
+        grid-template-areas:
+         "aboutMe newsletter followMe"
+    }
+    .footer-collumn2 {
+        width: 100%;
+        margin-left: auto;       
+    }
+    .footer-collumn3 {
+        width: 100%;
+        margin-left: auto;
+        height: 100%; 
+    }
+}
