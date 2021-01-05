@@ -143,6 +143,7 @@ color: black;
     height: 40px;
     width: 80%;
     background-color: white;
+    margin-bottom: 40px;
 }
 .btn-div {
     width: 100%;
@@ -153,6 +154,7 @@ color: black;
     color:black;
     font-size: 15px;
     font-weight: 600;
+    
 }
 .plans-button > p {
     display: inline-block;
@@ -186,5 +188,56 @@ color: white;
     }
     100%{
         color: white;
+    }
+}
+
+@media (max-width:992px){
+    .plans-item{
+        width: 50%;
+    }
+    .plans-item:hover{
+        width: 50%;
+    }
+}
+@media (max-width:960px){
+    .plans-item{
+        width: 50%;
+        animation-name: margin-top;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        
+    }
+    .plans-item:hover{
+        width: 50%;
+        animation-name: margin-top;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;    }
+}
+@keyframes margin-top{
+    0%{
+
+    }
+    100%{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .plans-item{
+        height: 500px;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right:10%;
+        
+    }
+    .plans-item:hover{
+        height: 500px;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right:10%;
     }
 }
