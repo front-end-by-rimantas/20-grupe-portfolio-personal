@@ -3,25 +3,30 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    animation-name: row-gap;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 .plans-section{
     margin-top: 60px;
 }
-.main-plans-heading{
+.plans-main > .main-plans-heading {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-items:center;
 }
-.main-plans-heading > p{
+.plans-main > .main-plans-heading > p{
     font-size: 15px;
     color: #777777;
     font-weight: 300;
+    text-align: center;
 }
-.main-plans-heading > h1{
+.plans-main > .main-plans-heading > h2{
     font-size: 40px;
     font-weight: 600;
+    text-align: center;
 }
 .plans-main > section {
     display: flex;
@@ -127,13 +132,13 @@ z-index: 5;
     border-bottom:1px solid #EEEEEE;
 }
 
-.plans-price > p {
+.row >.col-xs-12 > .plans-price > p {
     margin-top: 25px;
 font-size: 30px;
 font-weight: bold;
 color: black;
 }
-.plans-item:hover > .plans-price p {
+.plans-item:hover > .row >.col-xs-12 > .plans-price p {
     display:none;
 }
 .plans-button{
@@ -202,42 +207,62 @@ color: white;
 @media (max-width:960px){
     .plans-item{
         width: 50%;
-       /* animation-name: margin-top;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards; */
     }
     .plans-item:hover{
         width: 50%;
-        /* animation-name: margin-top;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards; */
+        
         }
+        .plans-section{
+        animation-name: row-gap;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
 }
-@keyframes margin-top{
+@keyframes row-gap{
     0%{
+        row-gap:0px;
 
     }
     100%{
-        margin-top: 30px;
+        row-gap:20px;
     }
 }
 
 @media (max-width:768px){
     .plans-item{
         height: 500px;
-        width: 80%;
+        max-width: 500px;
+        width: 93%;
         margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: 10%;
-        margin-right:10%;
+        margin-left: auto;
+        margin-right: auto;
         
     }
     .plans-item:hover{
         height: 500px;
-        width: 80%;
+        max-width: 500px;
+        width: 93%;
         margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: 10%;
-        margin-right:10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:576px){
+    .plans-item{
+        height: 500px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    .plans-item:hover{
+        height: 500px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       
     }
 }
