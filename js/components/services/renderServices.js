@@ -3,12 +3,10 @@ import { findIfValidSelector } from './findIfValidSelector.js';
 import { isValidServiceItem } from './isValidServiceItem.js';
 
 function renderServices(params) {
-    // input validation
     if (!isValidServices(params)) {
         return false;
     }
 
-    // logic
     const { selector, data, limit } = params;
 
     const DOM = findIfValidSelector(selector);
@@ -29,12 +27,6 @@ function renderServices(params) {
 
     }
 
-    // post logic validation
-
-
-
-    // result
-    // DOM.classList.add('service-list');
     DOM.innerHTML = HTML;
 
     return true;
