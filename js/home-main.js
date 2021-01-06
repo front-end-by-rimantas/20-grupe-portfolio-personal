@@ -20,7 +20,7 @@ import { servicesData } from './data/servicesData.js';
 /* About me */
 /* Services */
 renderServices ({
-    selector: '#services',
+    selector: '#services-block',
     data: servicesData,
     limit: 6
 });
