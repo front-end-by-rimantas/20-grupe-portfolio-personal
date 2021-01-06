@@ -4,6 +4,8 @@
 /* About me */
 /* Services */
 /* Results */
+import { resultsData } from './data/resultsData.js';
+
 /* Projects */
 /* Feedback */
 /* Plans */
