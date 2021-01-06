@@ -3,7 +3,9 @@
 /* This is me */
 /* About me */
 /* Services */
+import { renderServices } from './components/services/renderServices.js';
 import { servicesData } from './data/servicesData.js';
+
 /* Results */
 /* Projects */
 /* Feedback */
@@ -17,6 +19,12 @@ import { servicesData } from './data/servicesData.js';
 /* This is me */
 /* About me */
 /* Services */
+renderServices ({
+    selector: '#services',
+    data: servicesData,
+    limit: 6
+});
+
 /* Results */
 /* Projects */
 /* Feedback */
