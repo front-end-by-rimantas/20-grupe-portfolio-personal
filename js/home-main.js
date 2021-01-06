@@ -3,6 +3,7 @@
 /* This is me */
 /* About me */
 /* Services */
+import { servicesData } from './data/servicesData.js';
 /* Results */
 /* Projects */
 /* Feedback */
