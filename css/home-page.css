@@ -5,6 +5,7 @@
 @import './components/bootstrap-grid.css';
 @import './components/bootstrap-grid.min.css';
 @import './components/font-awesome.min.css';
+@import './components/font-linearicons.css';
 /* components */
 @import './components/about.css';
 @import './components/blog.css';
