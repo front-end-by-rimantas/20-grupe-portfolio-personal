@@ -22,7 +22,7 @@ import { servicesData } from './data/servicesData.js';
 renderServices ({
     selector: '#services-block',
     data: servicesData,
-    limit: 6
+    limit: 6,
 });
 
 /* Results */

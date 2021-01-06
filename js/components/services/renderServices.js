@@ -34,7 +34,7 @@ function renderServices(params) {
 
 
     // result
-    DOM.classList.add('service-list');
+    // DOM.classList.add('service-list');
     DOM.innerHTML = HTML;
 
     return true;
