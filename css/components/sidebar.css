@@ -33,6 +33,9 @@
     flex-direction: column;
     margin-top: 60px;
 }
+#sidebarNav > .active {
+    color: var(--main-color);
+}
 .sidebar > nav a {
     display: flex;
     flex-direction: row;
@@ -54,4 +57,10 @@
 }
 .sidebar > nav i {
     margin-top: 3px;
+}
+.sidebar > nav > .dropdown > .dropdown-content {
+    display: none;
+}
+.sidebar > nav > .dropdown:hover > .dropdown-content {
+    display: none;
 }
