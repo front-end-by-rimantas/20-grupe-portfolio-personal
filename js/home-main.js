@@ -1,8 +1,8 @@
 // ALL IMPORT
 /* Header */
 /* Sidebar */
-// import { closeSidebar } from './components/sidebar/closeSidebar.js';
-// import { openSidebar } from './components/sidebar/openSidebar.js';
+import { closeSidebar } from './components/sidebar/closeSidebar.js';
+import { openSidebar } from './components/sidebar/openSidebar.js';
 /* This is me */
 /* About me */
 /* Services */
@@ -21,8 +21,8 @@ import { servicesData } from './data/servicesData.js';
 /* Header */
 /* Sidebar */
 
-// openSidebar();
-// closeSidebar();
+openSidebar();
+closeSidebar();
 
 /* This is me */
 /* About me */

@@ -58,7 +58,7 @@
 
                     <a href="#">Contact</a>
                 </nav>
-                <div class="nav-btn" onclick="openSidebar()">
+                <div class="nav-btn" id="hamburger">
                     <div class="menu-button"></div>
                     <div class="menu-button"></div>
                     <div class="menu-button"></div>
@@ -69,7 +69,7 @@
 
     <div class="sidebar-section" id="mySidebarSection">
         <div class="sidebar" id="mySidebar">
-            <div class="close-icon" onclick="closeSidebar()"><i class="fa fa-times"></i></div>
+            <div id="closeIcon"><i class="fa fa-times"></i></div>
             <nav id="sidebarNav">
                 <a href="./index.html">Home</a>
                 <a href="#">About</a>
@@ -332,18 +332,6 @@
 
     <script src="./js/home-main.js" type="module"></script>
 
-    <script>
-        function openSidebar() {
-            document.getElementById("mySidebar").style.width = "300px";
-            document.getElementById("mySidebarSection").style.width = "100%";
-            document.getElementById("sidebarNav").style.display = "flex";
-        }
-        function closeSidebar() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("mySidebarSection").style.width = "0";
-            document.getElementById("sidebarNav").style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
