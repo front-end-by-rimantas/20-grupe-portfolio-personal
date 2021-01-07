@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 120px;
 }
 .plans-main > .main-plans-heading {
     display: flex;
@@ -14,8 +15,10 @@
     color: #777777;
     font-weight: 300;
     text-align: center;
+    margin-bottom: 30px;
 }
 .main-plans-heading > h2{
+    margin-top: 120px;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
