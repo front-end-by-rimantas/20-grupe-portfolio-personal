@@ -1,48 +1,31 @@
-/* Plans stle, probably use a table? */
-.plans-main{display: flex;
+.plans-main{
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    animation-name: row-gap;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-.plans-section{
-    margin-top: 60px;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 .plans-main > .main-plans-heading {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    justify-items:center;
 }
-.plans-main > .main-plans-heading > p{
+.main-plans-heading > p{
     font-size: 15px;
     color: #777777;
     font-weight: 300;
     text-align: center;
 }
-.plans-main > .main-plans-heading > h2{
+.main-plans-heading > h2{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
 }
-.plans-main > section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 99%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-}
 .plans-item{
-    position:sticky;
     background-color: #F9F9FF;
     width:25%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 500px;
     color: #777777;
@@ -51,17 +34,14 @@
 animation-name: zoom;
 animation-fill-mode: forwards;
 animation-duration: 0.5s;
-width: 25%;
-height: auto;
+z-index: 10;
 cursor: pointer;
 background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
-z-index: 5;
 }
 .plans-item:hover > .round-element {
     background-color: rgba(255, 255, 255, 0.1);
     border: 30px solid rgba(255, 255, 255, 0.3);
     background-clip: padding-box;
-
 }
 .round-element{
     display: flex;
@@ -77,7 +57,6 @@ z-index: 5;
     font-weight: bold;
     border-radius: 100px;
     margin-top: 40px;
-    
 }
 .round-element > p{
     line-height: 34px;
@@ -90,7 +69,9 @@ z-index: 5;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-
+.plans-item:hover > .plans-heading > h2 {
+    color: white;
+}
 .plans-heading{
    display: flex;
    flex-wrap: wrap;
@@ -101,14 +82,11 @@ z-index: 5;
 .plans-heading > h2 {
     color: black;
 }
-.plans-item:hover > .plans-heading > h2 {
-    color: white;
-}
+
 .plans-heading > p {
     font-weight: 300;
 }
 .plans-features{
-    padding: 0px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +112,7 @@ z-index: 5;
     border-bottom:1px solid #EEEEEE;
 }
 
-.row >.col-xs-12 > .plans-price > p {
+.plans-price > p {
     margin-top: 25px;
 font-size: 30px;
 font-weight: bold;
@@ -161,11 +139,9 @@ color: black;
     color:black;
     font-size: 15px;
     font-weight: 600;
-    
 }
 .plans-button > p {
     display: inline-block;
-    
 }
 .plans-item:hover > .plans-button {
     display: block;
@@ -212,9 +188,8 @@ color: white;
     }
     .plans-item:hover{
         width: 50%;
-        
         }
-        .plans-section{
+        .plans-main{
         animation-name: row-gap;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
@@ -223,7 +198,6 @@ color: white;
 @keyframes row-gap{
     0%{
         row-gap:0px;
-
     }
     100%{
         row-gap:20px;
@@ -239,7 +213,6 @@ color: white;
         margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
-        
     }
     .plans-item:hover{
         height: 500px;
@@ -258,13 +231,11 @@ color: white;
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
-    
     }
     .plans-item:hover{
         height: 500px;
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
-       
     }
 }
