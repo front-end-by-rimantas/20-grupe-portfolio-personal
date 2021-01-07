@@ -21,7 +21,7 @@ function renderServices(params) {
         }
         HTML += `<div class="service-item col-12 col-md-6 col-lg-4">
             <i class="fa fa-${item.icon}"></i>
-            <h3>${item.title}</h1>
+            <h3>${item.title}</h3>
             <p>${item.info}</p>
         </div>`;
 
