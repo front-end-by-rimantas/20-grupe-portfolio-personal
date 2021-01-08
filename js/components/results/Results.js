@@ -10,8 +10,8 @@ class Results {
 
         this.DOM = null;
         this.validUsedData = [];
-        this.animationDuration = 5;
-        this.fps = 30;
+        this.animationDuration = 3;
+        this.fps = 10;
     }
 
     init() {
