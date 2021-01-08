@@ -1,8 +1,9 @@
 function closeSidebar() {
-    document.getElementById("closeIcon").addEventListener('click', function(){
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("mySidebarSection").style.width = "0";
-        document.getElementById("sidebarNav").style.display = "none";
+    document.querySelector("#closeIcon").addEventListener('click', function(){
+    document.querySelector("#mySidebar").style.width = "0";
+    document.querySelector("#mySidebarSection").style.width = "0";
+    document.querySelector("#sidebarNav").style.display = "none";
+    document.querySelector("body").style.overflow = "scroll";
     })
     return true;
 }
