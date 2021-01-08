@@ -3,6 +3,9 @@
 /* This is me */
 /* About me */
 /* Services */
+import { renderServices } from './components/services/renderServices.js';
+import { servicesData } from './data/servicesData.js';
+
 /* Results */
 import { Results } from './components/results/Results.js';
 import { resultsData } from './data/resultsData.js';
@@ -19,6 +22,12 @@ import { resultsData } from './data/resultsData.js';
 /* This is me */
 /* About me */
 /* Services */
+renderServices ({
+    selector: '#services-block',
+    data: servicesData,
+    limit: 6,
+});
+
 /* Results */
 /* Projects */
 /* Feedback */
