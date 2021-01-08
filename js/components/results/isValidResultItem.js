@@ -1,7 +1,7 @@
 function isValidResultItem(item) {
     if (typeof item !== 'object' ||
         Array.isArray(item) ||
-        Object.keys(item).length !== 3) {
+        Object.keys(item).length !== 2) {
         return false;
     }
     if (typeof item.label !== 'string' ||
