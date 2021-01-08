@@ -58,9 +58,12 @@
 .sidebar > nav i {
     margin-top: 3px;
 }
-.sidebar > nav > .dropdown > .dropdown-content {
+.sidebar-dropdown-content {
     display: none;
 }
-.sidebar > nav > .dropdown:hover > .dropdown-content {
+.sidebar-dropdown-level-2 {
+    display: none;
+}
+.sidebar-dropdown-content-lvl-2 {
     display: none;
 }
