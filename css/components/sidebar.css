@@ -58,11 +58,24 @@
 .sidebar > nav i {
     margin-top: 3px;
 }
-.sidebar-dropdown-content {
+.sidebar-dropdown-content-blog {
     display: none;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.sidebar-dropdown-content-pages {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
 }
 .sidebar-dropdown-level-2 {
     display: none;
+}
+.sidebar-dropdown-level-2 a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 .sidebar-dropdown-content-lvl-2 {
     display: none;
