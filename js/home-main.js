@@ -17,6 +17,8 @@ import { servicesData } from './data/servicesData.js';
 /* Blog */
 /* Logos */
 /* Footer */
+import { renderSocials } from './components/socials/renderSocials.js';
+import { socialsData } from './data/socialsData.js';
 
 // CODE EXECUTION
 /* Header */
@@ -41,3 +43,8 @@ renderServices ({
 /* Blog */
 /* Logos */
 /* Footer */
+renderSocials ({
+    selector: '#socials-block',
+    data: socialsData,
+    limit: 4,
+});
