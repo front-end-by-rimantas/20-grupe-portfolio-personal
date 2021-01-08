@@ -29,6 +29,9 @@ renderServices ({
 });
 
 /* Results */
+const results = new Results(resultsData);
+results.init();
+
 /* Projects */
 /* Feedback */
 /* Plans */
