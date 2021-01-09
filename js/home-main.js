@@ -14,6 +14,8 @@ import { servicesData } from './data/servicesData.js';
 /* Projects */
 /* Feedback */
 /* Plans */
+import { renderPlanPrices} from './components/plans/renderPlanPrices.js';
+import { planPricesData } from './data/planPricesData.js';
 /* Blog */
 /* Logos */
 /* Footer */
@@ -38,6 +40,11 @@ renderServices ({
 /* Projects */
 /* Feedback */
 /* Plans */
+renderPlanPrices({
+    selector: '#plans-main',
+    data: planPricesData,
+    limit: 4,
+})
 /* Blog */
 /* Logos */
 /* Footer */
