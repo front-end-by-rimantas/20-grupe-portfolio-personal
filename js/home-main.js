@@ -1,5 +1,9 @@
 // ALL IMPORT
 /* Header */
+/* Sidebar */
+import { closeSidebar } from './components/sidebar/closeSidebar.js';
+import { openSidebar } from './components/sidebar/openSidebar.js';
+import { openCloseSidebarDropdown } from './components/sidebar/openCloseSidebarDropdown.js';
 /* This is me */
 /* About me */
 /* Services */
@@ -16,6 +20,11 @@ import { servicesData } from './data/servicesData.js';
 
 // CODE EXECUTION
 /* Header */
+/* Sidebar */
+
+openSidebar();
+closeSidebar();
+openCloseSidebarDropdown();
 /* This is me */
 /* About me */
 /* Services */
