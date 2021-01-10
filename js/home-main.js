@@ -11,6 +11,9 @@ import { renderServices } from './components/services/renderServices.js';
 import { servicesData } from './data/servicesData.js';
 
 /* Results */
+import { Results } from './components/results/Results.js';
+import { resultsData } from './data/resultsData.js';
+
 /* Projects */
 /* Feedback */
 /* Plans */
@@ -35,6 +38,9 @@ renderServices ({
 });
 
 /* Results */
+const results = new Results(resultsData);
+results.init();
+
 /* Projects */
 /* Feedback */
 /* Plans */
