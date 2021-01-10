@@ -22,6 +22,8 @@ import { planPricesData } from './data/planPricesData.js';
 /* Blog */
 /* Logos */
 /* Footer */
+import { renderSocials } from './components/socials/renderSocials.js';
+import { socialsData } from './data/socialsData.js';
 
 // CODE EXECUTION
 /* Header */
@@ -54,3 +56,8 @@ renderPlanPrices({
 /* Blog */
 /* Logos */
 /* Footer */
+renderSocials ({
+    selector: '#socials-block',
+    data: socialsData,
+    limit: 4,
+});
