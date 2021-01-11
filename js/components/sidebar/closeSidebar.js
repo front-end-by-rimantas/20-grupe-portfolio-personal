@@ -1,5 +1,5 @@
 function closeSidebar() {
-    document.querySelector('#closeIcon').addEventListener('click', function () {
+    document.querySelector('#closeIcon, #mySidebarSection').addEventListener('click', function () {
         document.querySelector('#mySidebar').style.width = '0';
         document.querySelector('#mySidebarSection').style.width = '0';
         document.querySelector('#sidebarNav').style.display = 'none';
