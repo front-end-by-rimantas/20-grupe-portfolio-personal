@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.575);
 }
 .sidebar {
@@ -17,7 +17,7 @@
     height: 100%;
     background-color: black;
     opacity: 90%;
-    z-index: 1;
+    z-index: 2;
     transition: 0.3s;
 }
 #closeIcon {
@@ -76,4 +76,12 @@
     display: none;
     padding-left: 30px;
     width: 100%;
+}
+@media (min-width: 992px) {
+    .sidebar-section {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
 }
