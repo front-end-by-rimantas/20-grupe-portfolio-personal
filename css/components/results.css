@@ -1,1 +1,47 @@
 /* Result numbers style */
+.results-background {
+    background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
+}
+
+.results-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5rem 2em;
+}
+
+.number-item {
+    padding: 1.1rem;
+    width: 100%;
+}
+
+.number {
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.label {
+    color: white;
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media only screen and (min-width : 768px) {
+    .results-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .number-item {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .results-wrapper {
+        flex-wrap: nowrap;
+    }
+}

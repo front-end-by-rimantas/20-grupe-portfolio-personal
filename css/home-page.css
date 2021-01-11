@@ -5,6 +5,7 @@
 @import './components/bootstrap-grid.css';
 @import './components/bootstrap-grid.min.css';
 @import './components/font-awesome.min.css';
+@import './components/font-linearicons.css';
 /* components */
 @import './components/about.css';
 @import './components/blog.css';
@@ -18,6 +19,7 @@
 @import './components/results.css';
 @import './components/selection.css';
 @import './components/services.css';
+@import './components/sidebar.css';
 @import './components/slider.css';
 
 /* custom: home page sections */

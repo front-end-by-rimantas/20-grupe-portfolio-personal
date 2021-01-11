@@ -1,5 +1,156 @@
+footer {
+    background-color: var(--footer-color);
+    bottom:0;
+    left:0;
+    width: 100%;
+    margin-top: auto;
+    min-height: 309px;
+    color: var(--grey-color);
+    margin-left:auto;
+    margin-right:auto;
+    display: flex; 
+    align-items: center; 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+ .footerRow {
+    display: grid;
+    box-sizing: border-box;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 14px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
 /* About me */
+footer h4 {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer span {
+    color: var(--main-color)
+}
+.footer-collumn1 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: aboutMe;
+}
 
 /* Newsletter */
 
+footer input {
+    display: inline-block;
+    height: 50px;
+    float: left;
+    padding-left: 20px;
+    width: calc(100% - 50px);
+    font-weight: 300;
+}
+
+footer button {
+    display: inline-block;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border: none;
+    line-height: 25px;
+}
+
+.footerButton {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.footer-collumn2 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: newsletter;
+}
+
+footer button:hover{
+    cursor: pointer;
+}
+    
+
 /* Follow me */
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+.footer-collumn3 {
+    text-align: left;
+    line-height: 1.625em;
+    grid-area: followMe;
+}
+
+.socials a:hover {
+    color: var(--main-color);
+}
+
+/* Respinsive fix */
+
+ @media (max-width: 576px){
+    .footerRow {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "aboutMe"
+        "newsletter"
+        "followMe "
+    }
+}
+@media (min-width: 576px){
+    .footerRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+         "aboutMe newsletter"
+        "followMe ."
+    }
+}
+@media (min-width: 768px){
+    .footerRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+         "aboutMe newsletter"
+        "followMe ."  
+    }
+    .footer-collumn1{
+        width: 100%;
+        vertical-align:top
+    }
+    .footer-collumn2 {
+        vertical-align:top;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 992px){
+    .footerRow {
+        grid-template-columns: 0.4fr 0.4fr 0.2fr;
+        grid-template-areas:
+         "aboutMe newsletter followMe"
+    }
+    .footer-collumn2 {
+        width: 100%;
+        margin-left: auto;       
+    }
+    .footer-collumn3 {
+        width: 100%;
+        margin-left: auto;
+        height: 100%; 
+    }
+}

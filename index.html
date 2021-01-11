@@ -7,10 +7,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/home-page.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="img/png"/>
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
-
 </head>
 
 <body>
@@ -26,7 +22,6 @@
                     <a href="#">Portfolio</a>
                     <a href="#">Pricing</a>
 
-
                     <div class="dropdown">
                         <a href="#">Blog <i class="fa fa-angle-down"></i></a>
                         <div class="dropdown-content">
@@ -35,12 +30,10 @@
                         </div>
                     </div>
 
-
                     <div class="dropdown dropdown-pages">
                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                         <div class="dropdown-content">
                             <a href="#">Elements</a>
-
 
                             <div class="dropdown-level-2">
                                 <a href="#">Level 2 <i class="fa fa-angle-right"></i></a>
@@ -50,15 +43,12 @@
                                 </div>
                             </div>
 
-                            
                         </div>
                     </div>
 
-
-
                     <a href="#">Contact</a>
                 </nav>
-                <div class="nav-btn">
+                <div class="nav-btn" id="hamburger">
                     <div class="menu-button"></div>
                     <div class="menu-button"></div>
                     <div class="menu-button"></div>
@@ -67,45 +57,83 @@
         </div>
     </header>
 
+    <div class="sidebar-section" id="mySidebarSection">
+        <div class="sidebar" id="mySidebar">
+            <div id="closeIcon"><i class="fa fa-times"></i></div>
+            <nav id="sidebarNav">
+                <a class="active" href="./index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Pricing</a>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-link-blog">Blog<i class="lnr lnr-chevron-down"></i></a>
+                    <div class="sidebar-dropdown-content-blog">
+                        <a href="#">Blog Home</a>
+                        <a href="#">Blog Single</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-pages">
+                    <a href="#" class="dropdown-link-pages">Pages<i class="lnr lnr-chevron-down"></i></a>
+                    <div class="sidebar-dropdown-content-pages">
+                        <a href="#">Elements</a>
+
+                        <div class="sidebar-dropdown-level-2">
+                            <a href="#" class="pages-level-2-link">Level 2<i class="lnr lnr-chevron-down"></i></a>
+                            <div class="sidebar-dropdown-content-lvl-2">
+                                <a href="#">Item One</a>
+                                <a href="#">Item Two</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+
     <main>
-        
+
         <!-- This is me -->
         <div class="container-fluid">
-            <div class="row">
+            <div class="row about-row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-this ">
-                    <section>
+                    <section class="about-section">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-left">
-                        <p>this is me</p>
-                        <h1>Philip gilbert</h1>
-                        <p>You will begin to realise why this exercise is called the Dickens
-                        Pattern with reference to the ghost showing Scrooge some different futures.</p>
-                        <div class="btn-hero">Discover now</div>
+                            <p>this is me</p>
+                            <h1>Philip gilbert</h1>
+                            <p>You will begin to realise why this exercise is called the Dickens
+                                Pattern with reference to the ghost showing Scrooge some different futures.</p>
+                            <div class="btn-hero">Discover now</div>
                         </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-right">
-                        <img src="./img/hero-img.webp" alt="Hero img." class="hero-img"> 
-                    </div>
-                </section>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-right">
+                            <img src="./img/hero-img.webp" alt="Hero img." class="hero-img">
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
         <!-- About me -->
-        <div class="container-fluid" >
+        <div class="container-fluid">
             <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
-                        <section>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
+                    <section class="about-section">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-left">
-                        <img src="./img/about-img.webp" alt="About img." class="about-img"> 
-                         </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-right">
-                        <p>About me</p>
-                        <h1>personal details</h1>
-                        <p>Here, I focus on a range of items and features that we use in 
-                            life without giving 
-                            them a second thought. such as Coca Cola. 
-                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco.</p>
-                        <div class="btn-hero">View full details</div>
+                            <img src="./img/about-img.webp" alt="About img." class="about-img">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-right">
+                            <p>About me</p>
+                            <h1>personal details</h1>
+                            <p>Here, I focus on a range of items and features that we use in
+                                life without giving
+                                them a second thought. such as Coca Cola.
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco.</p>
+                            <div class="btn-hero">View full details</div>
                         </div>
                     </section>
                 </div>
@@ -118,47 +146,15 @@
                 <h1 class="services-h1">My Offered Services</h1>
             </div>
             <div class="row col-12">
-                <p class="services-parag">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p> 
+                <p class="services-parag">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
             </div>
-                <div class="row service-items">
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-pie-chart"></i>
-                        <h3>Web design</h1>
-                        <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
-                    </div>
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-laptop"></i>
-                        <h3>Web development</h1>
-                        <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
-                    </div>
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-camera"></i>
-                        <h3>Photography</h1>
-                        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
-                    </div>
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-picture-o" aria-hidden="true"></i>
-                        <h3>Clipping path</h1>
-                        <p>Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.</p>
-                    </div>
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-tablet"></i>
-                        <h3>Apps interface</h1>
-                        <p>Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.</p>
-                    </div>
-                    <div class="service-item col-12 col-md-6 col-lg-4">
-                        <i class="fa fa-rocket"></i>
-                        <h3>Graphic design</h1>
-                        <p>You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.</p>
-                    </div>
-                </div>
+                <div class="row service-items" id="services-block"></div>
         </div>
-        <!-- Numbers -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    Numbers CONTENT
-                </div>
+
+        <!-- Results -->
+        <div class="container-fluid results-background">
+            <div class="container">
+                <div class="results-wrapper row" id="results-block"></div>
             </div>
         </div>
 
@@ -183,37 +179,119 @@
         <!-- Plans -->
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    Plans CONTENT
+                <div class="col-xs-12 main-plans-heading">
+                    <h2 class="title">Choose Your Plan</h2>
+                    <p class="subtitle">When someone does something that they know that they shouldn’t do, did they.</p>
                 </div>
+            </div>
+            <div class="row plans-row">
+                <div id="plans-main" class="col-xs-12 plans-main"></div>
             </div>
         </div>
 
         <!-- Blog -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    Blog CONTENT
+        <section class="blog-section col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-xs-12">Latest posts from our blog</h1>
+                    <p class="col-xs-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business</p>
+                    <div class="blog-item col-xs-12 col-md-4 col-lg-4">
+                        <div class="blog-img">
+                            <img src="./img/blog/pic1.jpg" alt="image1">
+                        </div>
+                        <div class="social-info">
+                            <div class="social-info-left">
+                                <img src="./img/blog/user.jpg" alt="user">
+                                <span>Mark Wiens</span>
+                            </div>
+                            <div class="social-info-right">
+                                <p>13th Dec <i class="lnr lnr-heart"></i> 15 <i class="lnr lnr-bubble"></i> 04</p>
+                            </div>
+                        </div>
+                        <div class="img-description">
+                            <h3>BREAK THROUGH SELF DOUBT AND FEAR</h3>
+                            <p>Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-item col-xs-12 col-md-4 col-lg-4">
+                        <div class="blog-img">
+                            <img src="./img/blog/pic2.jpg" alt="image2">
+                        </div>
+                        <div class="social-info">
+                            <div class="social-info-left">
+                                <img src="./img/blog/user.jpg" alt="user">
+                                <span>Mark Wiens</span>
+                            </div>
+                            <div class="social-info-right">
+                                <p>13th Dec <i class="lnr lnr-heart"></i> 15 <i class="lnr lnr-bubble"></i> 04</p>
+                            </div>
+                        </div>
+                        <div class="img-description">
+                            <h3>PORTABLE FASHION FOR YOUNG WOMEN</h3>
+                            <p>You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-item col-xs-12 col-md-4 col-lg-4">
+                        <div class="blog-img">
+                            <img src="./img/blog/pic3.jpg" alt="image3">
+                        </div>
+                        <div class="social-info">
+                            <div class="social-info-left">
+                                <img src="./img/blog/user.jpg" alt="user"> 
+                                <span>Mark Wiens</span>
+                            </div>
+                            <div class="social-info-right">
+                                <p>13th Dec <i class="lnr lnr-heart"></i> 15 <i class="lnr lnr-bubble"></i> 04</p>
+                            </div>
+                        </div>
+                        <div class="img-description">
+                            <h3>DO DREAMS SERVE AS A PREMONITION</h3>
+                            <p>So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- Logos -->
+        <div class="container logos">
+            <div class="rowLogos">
+                <div class="col-12"></div>
+                <img src="./img/logos1.webp" alt="logo1" id="logo1">
+                <img src="./img/logos2.webp" alt="logo2" id="logo2">
+                <img src="./img/logos3.webp" alt="logo3" id="logo3">
+                <img src="./img/logos4.webp" alt="logo4" id="logo4">
+                <img src="./img/logos5.webp" alt="logo5" id="logo5">
+            </div>
+        </div>
         </div>
 
-        <!-- Logos -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    Logos CONTENT
-                </div>
-            </div>
-        </div>
-        
     </main>
 
     <!-- Footer -->
-    <footer class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                Footer CONTENT
+<footer>
+    <div class="container footer-blue">
+        <div class="footerRow">
+            <div class="col-xs-12 col-sm-6 col-lg-5 footer-collumn1">
+                <h4>About me</h4>
+                <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
+                <p>Copyright &copy; 2020 All rights reserved | This template is made with &hearts; by <a href="https://github.com/front-end-by-rimantas/20-grupe-portfolio-personal"><span>Colorlib &amp; BIT students </span></a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-5 footer-collumn2" >
+                <h4>Newsletter</h4>
+                <p>Stay updated with our lates trends</p>
+                <form>
+                <input type="email" name="email" id="email_input" placeholder="Enter Email Address">
+                <button>
+                   <p class="footerButton"> &rarr;</p> 
+                </button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-2 footer-collumn3">
+                <h4>Follow Me</h4>
+                <p>Let us be social</p>
+                <div class="socials" id="socials-block"></div>
             </div>
         </div>
     </footer>
