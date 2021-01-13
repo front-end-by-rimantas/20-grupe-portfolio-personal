@@ -23,6 +23,8 @@ import { planPricesData } from './data/planPricesData.js';
 import { blogData } from './data/blogData.js';
 import { renderBlog } from './components/blog/renderBlog.js'
 /* Logos */
+import {renderLogos} from './components/logos/renderLogos.js';
+import {logoData} from './data/logoData.js';
 /* Footer */
 import { renderSocials } from './components/socials/renderSocials.js';
 import { socialsData } from './data/socialsData.js';
@@ -53,7 +55,7 @@ renderPlanPrices({
     selector: '#plans-main',
     data: planPricesData,
     limit: 4,
-})
+});
 /* Blog */
 renderBlog ({
     selector: '.blog-posts',
@@ -61,6 +63,11 @@ renderBlog ({
     limit: 3
 })
 /* Logos */
+renderLogos({
+    selector: '#rowLogos',
+    data: logoData,
+    limit: 5,
+});
 /* Footer */
 renderSocials ({
     selector: '#socials-block',
