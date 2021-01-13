@@ -20,6 +20,8 @@ import { resultsData } from './data/resultsData.js';
 import { renderPlanPrices} from './components/plans/renderPlanPrices.js';
 import { planPricesData } from './data/planPricesData.js';
 /* Blog */
+import { blogData } from './data/blogData.js';
+import { renderBlog } from './components/blog/renderBlog.js'
 /* Logos */
 import {renderLogos} from './components/logos/renderLogos.js';
 import {logoData} from './data/logoData.js';
@@ -30,7 +32,6 @@ import { socialsData } from './data/socialsData.js';
 // CODE EXECUTION
 /* Header */
 /* Sidebar */
-
 openSidebar();
 closeSidebar();
 openCloseSidebarDropdown();
@@ -56,6 +57,11 @@ renderPlanPrices({
     limit: 4,
 });
 /* Blog */
+renderBlog ({
+    selector: '.blog-posts',
+    data: blogData,
+    limit: 3
+})
 /* Logos */
 renderLogos({
     selector: '#rowLogos',
