@@ -45,7 +45,7 @@
     font-size: 13px;
     font-weight: 550;
     color: #fff;
-    animation: none;
+    text-decoration: none;
 }
 .sidebar > nav > .dropdown {
     padding-right: 10px;
