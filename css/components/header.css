@@ -136,6 +136,9 @@ header .dropdown-content-lvl-2 a {
         margin: initial;
         opacity: 0;
     }
+    20% {
+        opacity: 0;
+    }
     100% {
         margin-left: 20px;
         opacity: 1;
