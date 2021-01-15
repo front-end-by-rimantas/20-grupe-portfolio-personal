@@ -18,7 +18,7 @@
     background-color: black;
     opacity: 90%;
     z-index: 1;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 #closeIcon {
     color: #fff;
@@ -45,6 +45,10 @@
     font-size: 13px;
     font-weight: 550;
     color: #fff;
+    text-decoration: none;
+    animation-name: opacChange;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
 }
 .sidebar > nav > .dropdown {
     padding-right: 10px;
@@ -83,5 +87,13 @@
     }
     .sidebar {
         display: none;
+    }
+}
+@keyframes opacChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
