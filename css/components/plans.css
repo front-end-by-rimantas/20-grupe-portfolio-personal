@@ -1,1 +1,248 @@
-/* Plans stle, probably use a table? */
+.plans-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+.plans-main > .main-plans-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-plans-heading > p{
+    font-size: 15px;
+    color: #777777;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main-plans-heading > h2{
+    margin-top: 7px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.plans-item{
+    background-color: #F9F9FF;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: #777777;
+}
+.plans-item:hover{
+animation-name: zoom;
+animation-fill-mode: forwards;
+animation-duration: 0.5s;
+z-index: 10;
+cursor: pointer;
+background:linear-gradient(0.25turn, var(--main-color), var(--main-color-light));
+}
+.plans-item:hover > .round-element {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 30px solid rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
+}
+.round-element{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+    border: 30px solid #E2E5FF;
+    background-color: #EDEFFF;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 150px;
+    margin-top: 40px;
+}
+.round-element > p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    width: 40px;
+    font-weight: 300;
+    color: black;
+}
+
+.plans-item:hover > .round-element > p {
+    animation-name: text-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.plans-item:hover > .plans-heading > h2 {
+    color: white;
+}
+.plans-heading{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.plans-heading > h2 {
+    color: black;
+}
+
+.plans-heading > p {
+    font-weight: 300;
+}
+.plans-features{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.top-line{
+    border-top: 1px solid #EEEEEE;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.plans-item:hover > .top-line > p  {
+    animation-name: text-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.top-line:last-of-type{
+    border-bottom:1px solid #EEEEEE;
+}
+
+.plans-price > p {
+    margin-top: 25px;
+font-size: 30px;
+font-weight: bold;
+color: black;
+}
+.plans-item:hover > .row >.col-xs-12 > .plans-price p {
+    display:none;
+}
+.plans-button{
+    display: none;
+    margin-top: 40px;
+    padding: 8px;
+    height: 40px;
+    width: 80%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.btn-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.plans-button > p {
+    display: inline-block;
+}
+.plans-item:hover > .plans-button {
+    display: block;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.00, 1.00);
+-moz-transform: scale(1.00, 1.00);
+-ms-transform: scale(1.00, 1.00);
+-webkit-transform: scale(1.00, 1.00);
+-o-transform: scale(1.00, 1.00);
+    }
+    100%{
+        transform: scale(1.04, 1.04);
+-moz-transform: scale(1.04, 1.04);
+-ms-transform: scale(1.04, 1.04);
+-webkit-transform: scale(1.04, 1.04);
+-o-transform: scale(1.04, 1.04);
+color: white;
+    }
+}
+
+@keyframes text-color{
+    0%{
+
+    }
+    100%{
+        color: white;
+    }
+}
+
+@media (max-width:992px){
+    .plans-item{
+        width: 50%;
+    }
+    .plans-item:hover{
+        width: 50%;
+    }
+}
+@media (max-width:960px){
+    .plans-item{
+        width: 50%;
+    }
+    .plans-item:hover{
+        width: 50%;
+        }
+        .plans-main{
+        animation-name: row-gap;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes row-gap{
+    0%{
+        row-gap:0px;
+    }
+    100%{
+        row-gap:20px;
+    }
+}
+
+@media (max-width:768px){
+    .plans-item{
+        height: 500px;
+        max-width: 500px;
+        width: 93%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plans-item:hover{
+        height: 500px;
+        max-width: 500px;
+        width: 93%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:576px){
+    .plans-item{
+        height: 500px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .plans-item:hover{
+        height: 500px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

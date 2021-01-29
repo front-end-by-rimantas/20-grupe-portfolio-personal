@@ -7,7 +7,7 @@
     font-weight: 200;
     width: 100%;
 }
-section{
+.about-section{
     margin-top: 50px;
     width: 1100px;
     display: flex;
@@ -70,7 +70,7 @@ section{
     height:300px;
     width: 40%;
 }
-.about-me-right > h1 {
+.about-me-right > h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
