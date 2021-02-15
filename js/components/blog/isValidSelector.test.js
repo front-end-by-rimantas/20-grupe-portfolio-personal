@@ -16,15 +16,15 @@ describe('Testing selector validity', () => {
         expect(isValidSelector(tester)).toBeFalsy();
     });
 
-    // test('Is valid if given selector does not exist', () => {
-    //     let DOM = document.querySelector(tester);
-    //     const tester = '.random-selector';
-    //     expect(isValidSelector(tester)).toBeFalsy();
-    // });
+    test('Is invalid if given selector does not exist', () => {
+        document.body.innerHTML = '<body><header></header></body>';
+        const tester = 'header nav';
+        expect(isValidSelector(tester)).toBeFalsy();
+    });
 
-    // test('Is valid if a correct selector is provided', () => {
-    //     let DOM = document.querySelector(tester);
-    //     const tester = '.sidebar';
-    //     expect(isValidSelector(tester)).toBeTruthy();
-    // });
+    test('Is valid if a correct selector is provided', () => {
+        document.body.innerHTML = '<header><nav></nav></header>';
+        const tester = 'header nav';
+        expect(isValidSelector(tester)).toBeTruthy();
+    });
 });

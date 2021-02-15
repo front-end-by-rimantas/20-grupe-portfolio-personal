@@ -11,11 +11,38 @@ describe('Testing data format', () => {
         expect(isValidBlogPost(tester)).toBeTruthy();
     });
 
+    test('Is valid if data is provided as an array with at least one element', () => {
+        const tester = {
+            selector: '.blog-posts',
+            data: [{}],
+            limit: 3,
+        };
+        expect(isValidBlogPost(tester)).toBeTruthy();
+    });
+
     test('Is invalid if limit is < 1', () => {
         const tester = {
             selector: '.blog-posts',
             data: blogData,
             limit: 0,
+        };
+        expect(isValidBlogPost(tester)).toBeFalsy();
+    });
+
+    test('Is invalid if limit is NaN', () => {
+        const tester = {
+            selector: '.blog-posts',
+            data: blogData,
+            limit: NaN,
+        };
+        expect(isValidBlogPost(tester)).toBeFalsy();
+    });
+
+    test('Is invalid if limit is infinity', () => {
+        const tester = {
+            selector: '.blog-posts',
+            data: blogData,
+            limit: Infinity,
         };
         expect(isValidBlogPost(tester)).toBeFalsy();
     });
@@ -72,14 +99,5 @@ describe('Testing data format', () => {
             limit: 3,
         };
         expect(isValidBlogPost(tester)).toBeFalsy();
-    });
-
-    test('Is valid if data is provided as an array with at least one element', () => {
-        const tester = {
-            selector: '.blog-posts',
-            data: [{ picture: 'random-picture' }],
-            limit: 3,
-        };
-        expect(isValidBlogPost(tester)).toBeTruthy();
     });
 });
