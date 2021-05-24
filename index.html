@@ -1,243 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./css/home-page.css" />
+        <link rel="shortcut icon" href="./img/favicon.png" type="img/png" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/home-page.css">
-    <link rel="shortcut icon" href="./img/favicon.png" type="img/png"/>
-</head>
+    <body>
+        <!-- Header -->
+        <header class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <a href="./index.html"
+                        ><img class="logo" src="./img/logo.png" alt="logo"
+                    /></a>
+                    <nav>
+                        <a class="active" href="./index.html">Home</a>
+                        <a href="#about-menu">About</a>
+                        <a href="#services-menu">Services</a>
+                        <a href="#portfolio-menu">Portfolio</a>
+                        <a href="#pricing-menu">Pricing</a>
 
-<body>
-    <!-- Header -->
-    <header class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
-                <nav>
-                    <a class="active" href="./index.html">Home</a>
-                    <a href="#about-menu">About</a>
-                    <a href="#services-menu">Services</a>
-                    <a href="#portfolio-menu">Portfolio</a>
-                    <a href="#pricing-menu">Pricing</a>
-
-                    <div class="dropdown">
-                        <a href="#blog-menu">Blog <i class="fa fa-angle-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#blog-menu">Blog Home</a>
-                            <a href="#blog-menu">Blog Single</a>
+                        <div class="dropdown">
+                            <a href="#blog-menu"
+                                >Blog <i class="fa fa-angle-down"></i
+                            ></a>
+                            <div class="dropdown-content">
+                                <a href="#blog-menu">Blog Home</a>
+                                <a href="#blog-menu">Blog Single</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="dropdown dropdown-pages">
-                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#">Elements</a>
+                        <div class="dropdown dropdown-pages">
+                            <a href="#"
+                                >Pages <i class="fa fa-angle-down"></i
+                            ></a>
+                            <div class="dropdown-content">
+                                <a href="#">Elements</a>
 
-                            <div class="dropdown-level-2">
-                                <a href="#">Level 2 <i class="fa fa-angle-right"></i></a>
-                                <div class="dropdown-content-lvl-2">
-                                    <a href="#">Item One</a>
-                                    <a href="#">Item Two</a>
+                                <div class="dropdown-level-2">
+                                    <a href="#"
+                                        >Level 2
+                                        <i class="fa fa-angle-right"></i
+                                    ></a>
+                                    <div class="dropdown-content-lvl-2">
+                                        <a href="#">Item One</a>
+                                        <a href="#">Item Two</a>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
 
-                    <a href="#contact-menu">Contact</a>
-                </nav>
-                <div class="nav-btn" id="hamburger">
-                    <div class="menu-button"></div>
-                    <div class="menu-button"></div>
-                    <div class="menu-button"></div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Sidebar -->
-    <div class="sidebar-section" id="mySidebarSection"></div>
-    <div class="sidebar" id="mySidebar">
-        <div id="closeIcon"><i class="fa fa-times"></i></div>
-        <nav id="sidebarNav">
-            <a class="active" href="./index.html">Home</a>
-            <a href="#about-menu">About</a>
-            <a href="#portfolio-menu">Services</a>
-            <a href="#portfolio-menu">Portfolio</a>
-            <a href="#pricing-menu">Pricing</a>
-
-            <div class="dropdown">
-                <a href="#blog-menu" class="dropdown-link-blog">Blog<i class="lnr lnr-chevron-down"></i></a>
-                <div class="sidebar-dropdown-content-blog">
-                    <a href="#blog-menu">Blog Home</a>
-                    <a href="#blog-menu">Blog Single</a>
-                </div>
-            </div>
-
-            <div class="dropdown dropdown-pages">
-                <a href="#" class="dropdown-link-pages">Pages<i class="lnr lnr-chevron-down"></i></a>
-                <div class="sidebar-dropdown-content-pages">
-                    <a href="#">Elements</a>
-
-                    <div class="sidebar-dropdown-level-2">
-                        <a href="#" class="pages-level-2-link">Level 2<i class="lnr lnr-chevron-down"></i></a>
-                        <div class="sidebar-dropdown-content-lvl-2">
-                            <a href="#">Item One</a>
-                            <a href="#">Item Two</a>
-                        </div>
+                        <a href="#contact-menu">Contact</a>
+                    </nav>
+                    <div class="nav-btn" id="hamburger">
+                        <div class="menu-button"></div>
+                        <div class="menu-button"></div>
+                        <div class="menu-button"></div>
                     </div>
                 </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="sidebar-section" id="mySidebarSection"></div>
+        <div class="sidebar" id="mySidebar">
+            <div id="closeIcon"><i class="fa fa-times"></i></div>
+            <nav id="sidebarNav">
+                <a class="active" href="./index.html">Home</a>
+                <a href="#about-menu">About</a>
+                <a href="#portfolio-menu">Services</a>
+                <a href="#portfolio-menu">Portfolio</a>
+                <a href="#pricing-menu">Pricing</a>
+
+                <div class="dropdown">
+                    <a href="#blog-menu" class="dropdown-link-blog"
+                        >Blog<i class="lnr lnr-chevron-down"></i
+                    ></a>
+                    <div class="sidebar-dropdown-content-blog">
+                        <a href="#blog-menu">Blog Home</a>
+                        <a href="#blog-menu">Blog Single</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-pages">
+                    <a href="#" class="dropdown-link-pages"
+                        >Pages<i class="lnr lnr-chevron-down"></i
+                    ></a>
+                    <div class="sidebar-dropdown-content-pages">
+                        <a href="#">Elements</a>
+
+                        <div class="sidebar-dropdown-level-2">
+                            <a href="#" class="pages-level-2-link"
+                                >Level 2<i class="lnr lnr-chevron-down"></i
+                            ></a>
+                            <div class="sidebar-dropdown-content-lvl-2">
+                                <a href="#">Item One</a>
+                                <a href="#">Item Two</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <a href="#contact-menu">Contact</a>
             </nav>
         </div>
-    </div>
 
-    <main>
-
-        <!-- This is me -->
-        <div class="container-fluid">
-            <div class="row about-row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-this" id="about-menu">
-                    <section class="about-section">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-left">
-                            <p>this is me</p>
-                            <h1>Philip gilbert</h1>
-                            <p>You will begin to realise why this exercise is called the Dickens
-                                Pattern with reference to the ghost showing Scrooge some different futures.</p>
-                            <div class="btn-hero">Discover now</div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-right">
-                            <img src="./img/hero-img.webp" alt="Hero img." class="hero-img">
-                        </div>
-                    </section>
+        <main>
+            <!-- This is me -->
+            <div class="container-fluid">
+                <div class="row about-row">
+                    <div
+                        class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-this"
+                        id="about-menu"
+                    >
+                        <section class="about-section">
+                            <div
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-left"
+                            >
+                                <p>this is me</p>
+                                <h1>Philip gilbert</h1>
+                                <p>
+                                    You will begin to realise why this exercise
+                                    is called the Dickens Pattern with reference
+                                    to the ghost showing Scrooge some different
+                                    futures.
+                                </p>
+                                <div class="btn-hero">Discover now</div>
+                            </div>
+                            <div
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 this-is-me-right"
+                            >
+                                <img
+                                    src="./img/hero-img.webp"
+                                    alt="Hero img."
+                                    class="hero-img"
+                                />
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- About me -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
-                    <section class="about-section">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-left">
-                            <img src="./img/about-img.webp" alt="About img." class="about-img">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-right">
-                            <p>About me</p>
-                            <h2>personal details</h2>
-                            <p>Here, I focus on a range of items and features that we use in
-                                life without giving
-                                them a second thought. such as Coca Cola.
-                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
-                            <div class="btn-hero">View full details</div>
-                        </div>
-                    </section>
+            <!-- About me -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me"
+                    >
+                        <section class="about-section">
+                            <div
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-left"
+                            >
+                                <img
+                                    src="./img/about-img.webp"
+                                    alt="About img."
+                                    class="about-img"
+                                />
+                            </div>
+                            <div
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me-right"
+                            >
+                                <p>About me</p>
+                                <h2>personal details</h2>
+                                <p>
+                                    Here, I focus on a range of items and
+                                    features that we use in life without giving
+                                    them a second thought. such as Coca Cola.
+                                    Dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation
+                                    ullamco.
+                                </p>
+                                <div class="btn-hero">View full details</div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Services -->
-        <div class="container">
-            <div class="row col-12">
-                <h1 class="services-h1">My Offered Services</h1>
-            </div>
-            <div class="row col-12" id="services-menu">
-                <p class="services-parag">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
-            </div>
+            <!-- Services -->
+            <div class="container">
+                <div class="row col-12">
+                    <h1 class="services-h1">My Offered Services</h1>
+                </div>
+                <div class="row col-12" id="services-menu">
+                    <p class="services-parag">
+                        At about this time of year, some months after New Year’s
+                        resolutions have been made and kept, or made and
+                        neglected.
+                    </p>
+                </div>
                 <div class="row service-items" id="services-block"></div>
-        </div>
+            </div>
 
-        <!-- Results -->
-        <div class="container-fluid results-background">
+            <!-- Results -->
+            <div class="container-fluid results-background">
+                <div class="container">
+                    <div class="results-wrapper row" id="results-block"></div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="container" id="portfolio-menu">
+                <div class="row">
+                    <div class="col-xs-12">Projects CONTENT</div>
+                </div>
+            </div>
+
+            <!-- Feedback -->
             <div class="container">
-                <div class="results-wrapper row" id="results-block"></div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="container" id="portfolio-menu">
-            <div class="row">
-                <div class="col-xs-12">
-                    Projects CONTENT
+                <div class="row">
+                    <div class="col-xs-12">Feedback CONTENT</div>
                 </div>
             </div>
-        </div>
 
-        <!-- Feedback -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    Feedback CONTENT
-                </div>
-            </div>
-        </div>
-
-        <!-- Plans -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 main-plans-heading" id="pricing-menu">
-                    <h2 class="title">Choose Your Plan</h2>
-                    <p class="subtitle">When someone does something that they know that they shouldn’t do, did they.</p>
-                </div>
-            </div>
-            <div class="row plans-row">
-                <div id="plans-main" class="col-xs-12 plans-main"></div>
-            </div>
-        </div>
-
-        <!-- Blog -->
-        <section class="blog-section col-xs-12" id="blog-menu">
+            <!-- Plans -->
             <div class="container">
-                <h2 class="col-xs-12">Latest posts from our blog</h2>
-                <p class="col-xs-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business</p>
-                <div class="row blog-posts"></div>
+                <div class="row">
+                    <div class="col-xs-12 main-plans-heading" id="pricing-menu">
+                        <h2 class="title">Choose Your Plan</h2>
+                        <p class="subtitle">
+                            When someone does something that they know that they
+                            shouldn’t do, did they.
+                        </p>
+                    </div>
+                </div>
+                <div class="row plans-row">
+                    <div id="plans-main" class="col-xs-12 plans-main"></div>
+                </div>
             </div>
-        </section>
 
-        <!-- Logos -->
-        <div class="container logos">
-            <div id="rowLogos" class="rowLogos">
-                <div class="col-12"></div>
+            <!-- Blog -->
+            <section class="blog-section col-xs-12" id="blog-menu">
+                <div class="container">
+                    <h2 class="col-xs-12">Latest posts from our blog</h2>
+                    <p
+                        class="col-xs-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"
+                    >
+                        You may be a skillful, effective employer but if you
+                        don’t trust your personnel and the opposite, then the
+                        chances of improving and expanding the business
+                    </p>
+                    <div class="row blog-posts"></div>
+                </div>
+            </section>
 
-
+            <!-- Logos -->
+            <div class="container logos">
+                <div id="rowLogos" class="rowLogos">
+                    <div class="col-12"></div>
+                </div>
             </div>
-        </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Footer -->
-<footer>
-    <div class="container footer-blue">
-        <div class="footerRow">
-            <div class="col-xs-12 col-sm-6 col-lg-5 footer-collumn1" id="contact-menu">
-                <h4>About me</h4>
-                <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
-                <p>Copyright &copy; 2020 All rights reserved | This template is made with &hearts; by <a href="https://github.com/front-end-by-rimantas/20-grupe-portfolio-personal"><span>Colorlib &amp; BIT students </span></a></p>
+        <!-- Footer -->
+        <footer>
+            <div class="container footer-blue">
+                <div class="footerRow">
+                    <div
+                        class="col-xs-12 col-sm-6 col-lg-5 footer-collumn1"
+                        id="contact-menu"
+                    >
+                        <h4>About me</h4>
+                        <p>
+                            We have tested a number of registry fix and clean
+                            utilities and present our top 3 list on our site for
+                            your convenience.
+                        </p>
+                        <p>
+                            Copyright &copy; 2020 All rights reserved | This
+                            template is made with &hearts; by
+                            <a
+                                href="https://github.com/front-end-by-rimantas/20-grupe-portfolio-personal"
+                                ><span>Colorlib &amp; BIT students </span></a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-5 footer-collumn2">
+                        <h4>Newsletter</h4>
+                        <p>Stay updated with our lates trends</p>
+                        <form>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email_input"
+                                placeholder="Enter Email Address"
+                                required
+                            />
+                            <button>
+                                <p class="footerButton">&rarr;</p>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-2 footer-collumn3">
+                        <h4>Follow Me</h4>
+                        <p>Let us be social</p>
+                        <div class="socials" id="socials-block"></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-5 footer-collumn2" >
-                <h4>Newsletter</h4>
-                <p>Stay updated with our lates trends</p>
-                <form>
-                <input type="email" name="email" id="email_input" placeholder="Enter Email Address" required>
-                <button>
-                   <p class="footerButton"> &rarr;</p> 
-                </button>
-                </form>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-lg-2 footer-collumn3">
-                <h4>Follow Me</h4>
-                <p>Let us be social</p>
-                <div class="socials" id="socials-block"></div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="./js/home-main.js" type="module"></script>
-
-</body>
-
+        <script src="./js/home-main.js" type="module"></script>
+    </body>
 </html>
